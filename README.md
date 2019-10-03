@@ -2,7 +2,7 @@
 <h2>Linux Programming With Raspberry Pi</h2><br>
 출판사 제이펍을 통해 출판한 "사물인터넷을 위한 리눅스 프로그래밍 with 라즈베리 파이"의 소스 코드 사이트입니다.<br>
 <ul>
-<li>라즈비안(Raspbian)Buster 2019년 9월 26일 버전을 기준으로 소스 코드가 작성되어 있습니다.<li>
+<li>라즈비안(Raspbian)Buster 2019년 9월 26일 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
 </ul>
 <br>
 <h3>1부. 라즈베리 파이 사용하기</h3>
