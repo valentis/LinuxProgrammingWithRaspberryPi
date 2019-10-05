@@ -2,7 +2,8 @@
 .SUFFIXES : .c .o
 
 OBJECTS = rpi4.o \
-	  rpi5.o
+	  rpi5.o \
+	  rpi6.o
 
 SRCS = $(OBJECTS:.o=.c)
 
@@ -11,7 +12,7 @@ CFLAGS = -g
 LDFLAGS = -lwiringPi -pthread
 TARGET = $(OBJECTS:.o=)
 
-all : rpi4 rpi5
+all : rpi4 rpi5 rpi6
 
 $(TARGET) : $(TARGET:=.c)
 	$(CC) -o $@ $@.c $(LDFLAGS)
