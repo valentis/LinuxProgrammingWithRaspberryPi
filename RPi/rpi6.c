@@ -429,7 +429,7 @@ void *clnt_connection(void *arg)
 
     /* ' ' 문자로 reg_line을 구분해서 요청 라인의 내용(메소드)를 분리한다. */
     ret = strtok(reg_line, "/ ");
-    strcpy(method, (ret !=NULL)?ret:"");
+    strcpy(method, (ret != NULL)?ret:"");
     if(strcmp(method, "POST") == 0) { 		/* POST 메소드일 경우를 처리한다. */
         sendOk(clnt_write); 			/* 단순히 OK 메시지를 클라이언트로 보낸다. */
         goto END;
