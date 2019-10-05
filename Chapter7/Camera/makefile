@@ -1,10 +1,8 @@
 # makefile
 .SUFFIXES : .c .o
 
-OBJECTS = rpi4.o \
-	  rpi5.o \
-	  rpi6.o \
-          rpi7.o
+OBJECTS = v4l2_framebuffer.o \
+          bmpCapture.o
 
 SRCS = $(OBJECTS:.o=.c)
 
@@ -13,13 +11,10 @@ CFLAGS = -g
 LDFLAGS = -lwiringPi -pthread
 TARGET = $(OBJECTS:.o=)
 
-all : rpi4 rpi5 rpi6 rpi7
+all : v4l2_framebuffer bmpCapture
 
 $(TARGET) : $(TARGET:=.c)
-	$(CC) -o $@ $@.c $(LDFLAGS)
-
-rpi7 : $(TARGET:=.c)
-	$(CC) -o $@ $@.c bmpCapture.c $(LDFLAGS)
+	$(CC) -o $@ $@.c 
 
 clean :
 	$(RM) $(OBJECTS) $(TARGET) core capture.bmp
