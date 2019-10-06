@@ -23,7 +23,7 @@ int switchControl( )
     return 0;
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     wiringPiSetup( );
     switchControl( ); 		/* 스위치 사용을 위한 함수 */

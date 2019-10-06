@@ -135,7 +135,7 @@ void* joystickFunction(void* arg)
     return NULL;
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int i = 0;
     pthread_t ptPressure, ptTemperature, ptJoystick;

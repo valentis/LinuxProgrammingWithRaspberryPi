@@ -16,7 +16,7 @@ void ledPwmControl(int gpio)
     softPwmWrite(gpio, 0); 		/* LED 끄기 */
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int gno;
 

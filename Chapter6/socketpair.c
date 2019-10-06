@@ -4,7 +4,7 @@
 #include <wait.h>
 #include <sys/socket.h>
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int ret, sock_fd[2];
     int status;

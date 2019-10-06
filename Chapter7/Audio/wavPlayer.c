@@ -4,7 +4,7 @@
 
 WAVHEADER wavheader;
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int fd = -1; 			/* WAV 파일을 위한 파일 디스크립터 */
     int rc, buf_size, dir;

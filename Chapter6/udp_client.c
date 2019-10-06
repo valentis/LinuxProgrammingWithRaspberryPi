@@ -6,7 +6,7 @@
 #include <arpa/inet.h>
 #define UDP_PORT 5100
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int sockfd, n;
     socklen_t clisize;

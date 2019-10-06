@@ -7,7 +7,7 @@
 #include <sys/stat.h>
 #include <sys/resource.h>
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     struct sigaction sa; /* 시그널 처리를 위한 시그널 액션 */
     struct rlimit rl;

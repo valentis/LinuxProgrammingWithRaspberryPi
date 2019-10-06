@@ -17,7 +17,7 @@ void setnonblocking(int fd)
     fcntl(fd, F_SETFL, opts);
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int ssock, csock;
     socklen_t clen;

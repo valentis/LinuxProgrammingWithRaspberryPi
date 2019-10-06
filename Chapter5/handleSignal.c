@@ -7,7 +7,7 @@
 static void printSigset(sigset_t *set); 	/* 현재 sigset_t에 설정된 시그널 표시 */
 static void sigHandler(int); 			/* 시그널 처리용 핸들러 */
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     sigset_t pset; 		/* 블록할 시그널을 등록할 sigset_t 형 */
 

@@ -40,7 +40,7 @@ static void drawline(int fd, int start_x, int end_x, int y, ubyte r, ubyte g, ub
     }
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int fbfd, status, offset;
 

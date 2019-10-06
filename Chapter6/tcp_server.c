@@ -6,7 +6,7 @@
 
 #define TCP_PORT 5100 				/* 서버의 포트 번호 */
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int ssock; 					/* 소켓 디스크립트 정의 */
     socklen_t clen;

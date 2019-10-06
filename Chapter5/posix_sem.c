@@ -18,7 +18,7 @@ void v() 			/* 세마포어의 V 연산 */
     sem_wait(sem);
 }
 
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
     const char* name = "posix_sem";
     unsigned int value = 8; 	/* 세마포어의 값 */

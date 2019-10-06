@@ -6,7 +6,7 @@
 
 #define UDP_PORT 5100
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int sockfd,n;
     struct sockaddr_in servaddr, cliaddr;

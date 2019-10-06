@@ -9,7 +9,7 @@ struct msgbuf {
     char mtext[BUFSIZ]; /* 메시지의 내용 : 1바이트 이상의 문자열 */
 };
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     key_t key;
     int n, msqid;

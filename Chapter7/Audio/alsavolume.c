@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <alsa/asoundlib.h>
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     snd_mixer_t *mixer;
     snd_mixer_elem_t *elem; 		/* 믹서를 위한 PCM 엘리먼트(element) */

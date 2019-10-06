@@ -50,7 +50,7 @@ void getPressure(int fd, double *temperature, double *pressure);
 /* 온도와 습도를 위한 함수 */
 void getTemperature(int fd, double *temperature, double *humidity);
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int i = 0;
     int pressure_fd, temperature_fd;

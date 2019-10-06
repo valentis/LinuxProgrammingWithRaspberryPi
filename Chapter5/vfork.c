@@ -4,7 +4,7 @@
 static int g_var = 1; 	/* 초기화된 data 영역의 전역 변수 */
 char str[ ] = "PID";
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int var; 		/* 스택(stack) 영역의 자동 변수 */
 

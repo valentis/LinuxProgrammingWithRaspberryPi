@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <sys/wait.h> 		/* waitpid() 함수를 위해 사용 */
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     pid_t pid;
     int pfd[2];

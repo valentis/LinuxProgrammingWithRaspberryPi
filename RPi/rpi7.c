@@ -119,7 +119,7 @@ void* joystickFunction(void* arg)
 {
     int fd;
     struct input_event ie;
-    char* joy_dev = "/dev/input/event10";
+    const char* joy_dev = "/dev/input/event10";
     if((fd = open(joy_dev, O_RDONLY)) == -1) {
         perror("opening device");
         return NULL;
@@ -146,7 +146,7 @@ void* joystickFunction(void* arg)
     return NULL;
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int i = 0;
     pthread_t ptPressure, ptTemperature, ptJoystick, ptWebserver;

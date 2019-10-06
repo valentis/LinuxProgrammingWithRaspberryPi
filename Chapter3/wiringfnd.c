@@ -33,7 +33,7 @@ int fndControl(int num)
     return 0;
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int no;
     if(argc < 2) {

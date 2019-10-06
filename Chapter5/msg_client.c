@@ -10,7 +10,7 @@ struct msgbuf {
     char mtext[BUFSIZ];
 };
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     key_t key;
     int rc, msqid;

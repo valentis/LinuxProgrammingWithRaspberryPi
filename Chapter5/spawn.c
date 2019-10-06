@@ -16,7 +16,7 @@ int system(char *cmd) 		/* posix_spawn() 함수를 사용 */
     return status;
 }
 
-int main(int argc, char** argv, char **envp)
+int main(int argc, char **argv, char **envp)
 {
     while( *envp) 		/* 환경 변수를 출력한다. */
         printf( "%s\n", *envp++);

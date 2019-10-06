@@ -24,7 +24,7 @@ static void drawpoint(int fd, int x, int y, ubyte r, ubyte g, ubyte b)
     write(fd, &a, 1);
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int fbfd, status, offset;
 

@@ -276,7 +276,7 @@ static void uninitDevice()
     munmap(fbp, screensize);
 }
 
-int main(int argc, char ** argv)
+int main(int argc, char **argv)
 {
     long screensize = 0;
 

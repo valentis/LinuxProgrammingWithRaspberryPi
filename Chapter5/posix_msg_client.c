@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <mqueue.h>
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     mqd_t mq;
     const char* name = "/posix_msq";

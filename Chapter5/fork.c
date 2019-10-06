@@ -4,7 +4,7 @@
 static int g_var = 1; 	/* data 영역의 초기화된 변수 */
 char str[ ] = "PID";
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int var; 		/* stack 영역의 지역 변수 */
     pid_t pid;

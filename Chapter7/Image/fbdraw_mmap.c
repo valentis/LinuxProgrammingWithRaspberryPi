@@ -115,7 +115,7 @@ static void drawcircle(int fd, int center_x, int center_y, int radius, \
     }
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int fbfd, status, offset;
 

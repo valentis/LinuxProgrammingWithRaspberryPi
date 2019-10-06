@@ -12,7 +12,7 @@
 
 int setupDSP(snd_pcm_t *dev, int buf_size, int format, int sampleRate, int channels);
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     snd_pcm_t *playback_handle;
     double total = DURATION, t; 	/* 재생 시간은 5초 */

@@ -7,7 +7,7 @@ pthread_mutex_t mid;
 void *inc_function(void *);
 void *dec_function(void *);
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     pthread_t ptInc, ptDec;
 

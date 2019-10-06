@@ -4,7 +4,7 @@
 
 #define SHM_KEY 0x12345 		/* 공유 메모리를 위한 키 */
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int i, pid, shmid;
     int *cVal;

@@ -6,7 +6,7 @@
 
 #define TCP_PORT 5100
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     int ssock;
     struct sockaddr_in servaddr;
