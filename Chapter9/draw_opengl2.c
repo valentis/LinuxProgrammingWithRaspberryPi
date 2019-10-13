@@ -110,7 +110,6 @@ int main(int argc, const char **argv)
 
     /* 프래그먼트 셰이더(Shader)를 위한 소스 코드 */
     GLbyte fShaderStr[] =
-        "precision mediump float; \n"
         "void main() \n"
         "{ \n"
         " gl_FragColor = vec4(0.5, 0.5, 0.0, 1.0); \n"
