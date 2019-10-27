@@ -1,6 +1,4 @@
-#사물인터넷을위한LinuxProgrammingWithRaspberryPi2ndEdition
-<br>
-<h1>Linux Programming With Raspberry Pi(2nd Edition)</h1><br>
+<h1>사물인터넷을 위한 Linux Programming With Raspberry Pi(2nd Edition)</h1><br>
 출판사 제이펍을 통해 출판한 "사물인터넷을 위한 리눅스 프로그래밍 with 라즈베리 파이(2nd Edition)"의 소스 코드 사이트입니다.<br>
 <ul>
   <li>Raspberry pi 4를 기준올 하고 있습니다</li>
