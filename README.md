@@ -3,7 +3,14 @@
 <h1>Linux Programming With Raspberry Pi(2nd Edition)</h1><br>
 출판사 제이펍을 통해 출판한 "사물인터넷을 위한 리눅스 프로그래밍 with 라즈베리 파이(2nd Edition)"의 소스 코드 사이트입니다.<br>
 <ul>
-<li>라즈비안(Raspbian)Buster 2019년 9월 26일 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
+  <li>Raspberry pi 4를 기준올 하고 있습니다</li>
+  <li>라즈비안(Raspbian)Buster 2019년 9월 26일 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
+  <li>8장은 OpenCV 2/3 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
+  <li>9장은 라즈베리 파이 4를 기준으로 소스 코드가 작성되어 있고 라즈베리 파이 3 이전에 대한 설명과 소스 코드도 들어 있습니다.</li>
+  <li>10장은 Qt 5.11 이후 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
+  <li>11장은 Caffe 1.0 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
+  <li>12장은 리눅스 커널 5.3.x 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
+  <li>13장은 GStreamer 1.0 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
 </ul>
 <br>
 <h2>1부. 라즈베리 파이 사용하기</h2>
@@ -322,4 +329,4 @@
 <h5>&nbsp;&nbsp;13.4.1 SIMD와 ARM NEON 기술</h5> 
 <h5>&nbsp;&nbsp;13.4.2 Hello NEON! 프로그래밍</h5> 
 <h5>&nbsp;&nbsp;13.4.3 ARM NEON을 이용한 이미지 처리</h5> 
-<h5>&nbsp;&nbsp;13.4.4 ARM NEON 기반의 카메라 이미지 고속 처리</h5> 
+<h5>&nbsp;&nbsp;13.4.4 ARM NEON 기반의 카메라 이미지 고속 처리</h5>
