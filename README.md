@@ -1,10 +1,13 @@
-# LinuxProgrammingWithRaspberryPi
+#사물인터넷을위한LinuxProgrammingWithRaspberryPi2ndEdition
 <br>
 <h1>Linux Programming With Raspberry Pi(2nd Edition)</h1><br>
 출판사 제이펍을 통해 출판한 "사물인터넷을 위한 리눅스 프로그래밍 with 라즈베리 파이(2nd Edition)"의 소스 코드 사이트입니다.<br>
 <ul>
   <li>Raspberry pi 4를 기준올 하고 있습니다</li>
   <li>라즈비안(Raspbian)Buster 2019년 9월 26일 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
+  <li>3장은 새로운 하드웨어로 Sense HAT을 추가하였습니다.</li>
+  <li>4/5/6장은 Single UNIX Specification를 적용했습니다.</li>
+  <li>7장은 32비트 프레임 버퍼와 Sense HAT을 지원합니다.</li>
   <li>8장은 OpenCV 2/3 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
   <li>9장은 라즈베리 파이 4를 기준으로 소스 코드가 작성되어 있고 라즈베리 파이 3 이전에 대한 설명과 소스 코드도 들어 있습니다.</li>
   <li>10장은 Qt 5.11 이후 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
