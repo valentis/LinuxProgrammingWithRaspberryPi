@@ -1,3 +1,4 @@
+#! /bin/sh
 sudo apt-get update
 sudo apt-get -y install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler cmake 
 sudo apt-get -y install --no-install-recommends libboost-all-dev 
