@@ -220,10 +220,12 @@ static void processImage(const void *p)
         /* 색상 벡터를 프레임버퍼로 복사 */
         uint16x8x4_t pblock;
         uint8x8_t alpha = vmov_n_u8(255); 
-        pblock.val[0] = vaddw_u8(vshll_n_u8(c1   , 8), c0);
-        pblock.val[1] = vaddw_u8(vshll_n_u8(alpha, 8), c2);
-        pblock.val[2] = vaddw_u8(vshll_n_u8(c4   , 8), c3);
-        pblock.val[3] = vaddw_u8(vshll_n_u8(alpha, 8), c5);
+        uint8x8_t nc = vcgt_u8(c3, vmov_n_u8(64));			/* Red의 값이 64보다 크면 255, 아니면 0 */
+
+        pblock.val[0] = vaddw_u8(vshll_n_u8(c1 , 8), c0);
+        pblock.val[1] = vaddw_u8(vshll_n_u8(alpha, 8), nc);
+        pblock.val[2] = vaddw_u8(vshll_n_u8(c1 , 8), c0);
+        pblock.val[3] = vaddw_u8(vshll_n_u8(alpha, 8), nc);
         vst4q_u16((uint16_t *)(fbp+j), pblock);
     }
 }

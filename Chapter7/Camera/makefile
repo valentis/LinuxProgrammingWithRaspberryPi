@@ -7,14 +7,14 @@ OBJECTS = v4l2_framebuffer.o \
 SRCS = $(OBJECTS:.o=.c)
 
 CC = gcc
-CFLAGS = -g
+CFLAGS = -O3
 LDFLAGS = -lwiringPi -pthread
 TARGET = $(OBJECTS:.o=)
 
 all : v4l2_framebuffer bmpCapture
 
 $(TARGET) : $(TARGET:=.c)
-	$(CC) -o $@ $@.c 
+	$(CC) $(CFLAGS) -o $@ $@.c 
 
 clean :
 	$(RM) $(OBJECTS) $(TARGET) core capture.bmp

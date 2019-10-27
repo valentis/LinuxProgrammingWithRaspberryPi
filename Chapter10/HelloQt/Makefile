@@ -72,9 +72,6 @@ DIST          = /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_core_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_dbus.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_dbus_private.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_designer.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_designer_private.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_designercomponents_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_edid_support_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_egl_support_private.pri \
@@ -85,8 +82,6 @@ DIST          = /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_gui.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_gui_private.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_help.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_help_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_input_support_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_kms_support_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
@@ -114,12 +109,7 @@ DIST          = /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_testlib.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_testlib_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_theme_support_private.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_uiplugin.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_uitools.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_uitools_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_webkit.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_webkitwidgets.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
@@ -129,6 +119,7 @@ DIST          = /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/default_pre.prf \
@@ -177,9 +168,6 @@ Makefile: HelloQt.pro /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.c
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_core_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_dbus.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_dbus_private.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_designer.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_designer_private.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_designercomponents_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_edid_support_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_egl_support_private.pri \
@@ -190,8 +178,6 @@ Makefile: HelloQt.pro /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.c
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_gui.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_gui_private.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_help.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_help_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_input_support_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_kms_support_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
@@ -219,12 +205,7 @@ Makefile: HelloQt.pro /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.c
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_testlib.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_testlib_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_theme_support_private.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_uiplugin.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_uitools.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_uitools_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_webkit.pri \
-		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_webkitwidgets.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
@@ -234,6 +215,7 @@ Makefile: HelloQt.pro /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.c
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/default_pre.prf \
@@ -274,9 +256,6 @@ Makefile: HelloQt.pro /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.c
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_core_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_dbus.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_dbus_private.pri:
-/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_designer.pri:
-/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_designer_private.pri:
-/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_designercomponents_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_edid_support_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_egl_support_private.pri:
@@ -287,8 +266,6 @@ Makefile: HelloQt.pro /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.c
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_gui.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_gui_private.pri:
-/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_help.pri:
-/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_help_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_input_support_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_kms_support_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri:
@@ -316,12 +293,7 @@ Makefile: HelloQt.pro /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.c
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_testlib.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_testlib_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_theme_support_private.pri:
-/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_uiplugin.pri:
-/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_uitools.pri:
-/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_uitools_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri:
-/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_webkit.pri:
-/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_webkitwidgets.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri:
@@ -331,6 +303,7 @@ Makefile: HelloQt.pro /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.c
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/qt_config.prf:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.conf:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/exclusive_builds.prf:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/toolchain.prf:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/default_pre.prf:

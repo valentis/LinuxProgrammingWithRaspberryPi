@@ -7,7 +7,8 @@ OBJECTS = helloneon.o \
 	  colorconvert.o bmpHeader.o \
           neonconvert.o \
           colorsepia.o neonsepia.o \
-          v4l2_framebuffer_neon.o
+          v4l2_framebuffer_neon.o \
+          v4l2_framebuffer_filter.o
 
 SRCS = $(OBJECTS:.o=.c)
 
@@ -19,7 +20,7 @@ TARGET = $(OBJECTS:.o=)
 all : helloneon helloneon_for calculation \
       colorconvert neonconvert \
       colorsepia neonsepia \
-      v4l2_framebuffer_neon
+      v4l2_framebuffer_neon v4l2_framebuffer_filter
 
 colorconvert : $(TARGET:=.c) bmpHeader.c
 	$(CC) -o $@ $@.c bmpHeader.c

@@ -173,11 +173,8 @@ int main(int argc, char **argv)
     vertexShader = LoadShader(GL_VERTEX_SHADER, vShaderStr);
     fragmentShader = LoadShader(GL_FRAGMENT_SHADER, fShaderStr);
 
-printf("%d %d\n", vertexShader, fragmentShader);
-
     /* 프로그램 객체 생성 */
     programID = glCreateProgram();
-
     if(programID == 0) {
         printf("Error : glCreateProgram\n");
         return 0;

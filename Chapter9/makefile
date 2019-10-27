@@ -15,7 +15,9 @@ OBJECTS = init_screen.o \
 	  draw_cube_animation.o \
 	  draw_opengl2_drm.o \
 	  draw_opengl2_rotate.o \
-	  draw_opengl2_animation.o
+	  draw_opengl2_animation.o \
+          draw_camera.o \
+          draw_camera_shader.o
 
 SRCS = $(OBJECTS:.o=.c)
 
@@ -28,7 +30,8 @@ all : init_screen draw_egl draw_opengl2 \
       init_drm draw_drm  \
       draw_triangle draw_ortho draw_viewport \
       draw_cube draw_rotate draw_color draw_cube_animation \
-      draw_opengl2_drm draw_opengl2_rotate draw_opengl2_animation
+      draw_opengl2_drm draw_opengl2_rotate draw_opengl2_animation \
+      draw_camera draw_camera_shader 
 
 $(TARGET) : $(TARGET:=.c)
 	$(CC) -o $@ $@.c $(CFLAGS) $(LDFLAGS)
@@ -74,6 +77,12 @@ draw_opengl2_rotate : $(TARGET:=.c)
 
 draw_opengl2_animation : $(TARGET:=.c)
 	$(CC) -o $@ $@.c -I/usr/include/libdrm -ldrm -lgbm -lEGL -lGLESv2 -lGL
+
+draw_camera : $(TARGET:=.c)
+	$(CC) -O3 -o $@ $@.c -I/usr/include/libdrm -ldrm -lgbm -lEGL -lGLESv2 -lGL
+
+draw_camera_shader : $(TARGET:=.c)
+	$(CC) -O3 -o $@ $@.c -I/usr/include/libdrm -ldrm -lgbm -lEGL -lGLESv2 -lGL
 
 clean :
 	$(RM) $(OBJECTS) $(OBJECTS:.o=) core 
