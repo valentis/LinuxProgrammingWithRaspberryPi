@@ -146,7 +146,7 @@
 <h5>&nbsp;&nbsp;6.4.1 웹과 HTTP</h5>
 <h5>&nbsp;&nbsp;6.4.2 웹 브라우저와 웹 엔진</h5> 
 <h5>&nbsp;&nbsp;6.4.3 HTTP의 구조</h5> 
-<h5>&nbsp;&nbsp;6.4.4 HTML</h5> 
+<h5>&nbsp;&nbsp;6.4.4 HTML과 웹 페이지</h5> 
 <h5>&nbsp;&nbsp;6.4.5 부팅시 웹 서버의 실행</h5> 
 <h5>&nbsp;&nbsp;6.4.6 데몬 프로세스</h5> 
 <h5>&nbsp;&nbsp;6.4.7 인터넷 패킷 모니터링: Wireshark</h5> 
