@@ -1,6 +1,7 @@
 # LinuxProgrammingWithRaspberryPi
-<h2>Linux Programming With Raspberry Pi</h2><br>
-출판사 제이펍을 통해 출판한 "사물인터넷을 위한 리눅스 프로그래밍 with 라즈베리 파이"의 소스 코드 사이트입니다.<br>
+<br>
+<h2>Linux Programming With Raspberry Pi(2nd Edition)</h2><br>
+출판사 제이펍을 통해 출판한 "사물인터넷을 위한 리눅스 프로그래밍 with 라즈베리 파이(2nd Edition)"의 소스 코드 사이트입니다.<br>
 <ul>
 <li>라즈비안(Raspbian)Buster 2019년 9월 26일 버전을 기준으로 소스 코드가 작성되어 있습니다.</li>
 </ul>
@@ -24,4 +25,8 @@
 <h4>10장. Qt를 이용한 GUI 프로그래밍: 더 편리한 접근성</h4>
 <h4>11장. 라즈베리 파이와 인공지능: Caffe에서 한잔~</h4>
 <h4>12장. 리눅스 커널과 디바이스 드라이버: 더 깊은 곳으로</h4>
-
+<br>
+<h3>부록</h3>
+<h5>13-2. 리눅스 셸(Shell) 프로그래밍</h5>
+<h5>13-3. GStreamer를 이용한 멀티미디어 프로그래밍</h5>
+<h5>13-4. ARM NEON 기반의 SIMD 프로그래밍</h5>
