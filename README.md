@@ -308,19 +308,16 @@
 <h4>13.1 임베디드 리눅스 공부하기</h4>
 <h5>&nbsp;&nbsp;13.1.1 하드웨어</h5> 
 <h5>&nbsp;&nbsp;13.1.2 소프트웨어</h5> 
-<br>
 <h4>13.2. 리눅스 셸(Shell) 프로그래밍</h4>
 <h5>&nbsp;&nbsp;13.2.1 리눅스 셸</h5> 
 <h5>&nbsp;&nbsp;13.2.2 bash의 사용</h5> 
 <h5>&nbsp;&nbsp;13.2.3 bash의 환경 설정</h5> 
 <h5>&nbsp;&nbsp;13.2.4 리눅스 셸 프로그래밍</h5> 
-<br>
 <h4>13.3. GStreamer를 이용한 멀티미디어 프로그래밍</h4>
 <h5>&nbsp;&nbsp;13.3.1 GStreamer와 멀티미디어</h5> 
 <h5>&nbsp;&nbsp;13.3.2 GStreamer를 이용한 프로그래밍</h5> 
 <h5>&nbsp;&nbsp;13.3.3 GStreamer의 도구들</h5> 
 <h5>&nbsp;&nbsp;13.3.4 GStreamer와 스트리밍</h5> 
-<br>
 <h4>13.4. ARM NEON 기반의 SIMD 프로그래밍</h4>
 <h5>&nbsp;&nbsp;13.4.1 SIMD와 ARM NEON 기술</h5> 
 <h5>&nbsp;&nbsp;13.4.2 Hello NEON! 프로그래밍</h5> 
