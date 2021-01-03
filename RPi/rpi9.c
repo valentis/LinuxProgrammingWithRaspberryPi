@@ -306,13 +306,13 @@ int main(int argc, char **argv)
         int mx, my, mz;
         
         getAccel(acc_fd, &ax, &ay, &az);
-        printf("Accelerator : %d, %d, %d\n", ax, ay, ax);
+        printf("Accelerator : %d, %d, %d\n", ax, ay, az);
 
         getGyro(acc_fd, &gx, &gy, &gz);
-        printf("Gyro : %d(pitch), %d(roll), %d(yaw)\n", gx, gy, gx);
+        printf("Gyro : %d(pitch), %d(roll), %d(yaw)\n", gx, gy, gz);
         
         getMagneto(mag_fd, &mx, &my, &mz);
-        printf("magnetic : %d, %d, %d\n", mx, my, mx);
+        printf("magnetic : %d, %d, %d\n", mx, my, mz);
 
         rad += (ax > 0)?0.005:-0.005;
 
